@@ -1,6 +1,6 @@
 output "s3_bucket_name" {
   description = "The name of the S3 bucket used for raw invoice storage"
-  value       = aws_s3_bucket.invoice_bucket.id
+  value       = "tatenda-raw-invoice-bucket"
 }
 
 output "dynamodb_table_name" {
