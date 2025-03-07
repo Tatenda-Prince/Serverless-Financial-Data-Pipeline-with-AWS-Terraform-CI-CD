@@ -1,1 +1,0 @@
-{"errorMessage": "local variable 'bucket_name' referenced before assignment", "errorType": "UnboundLocalError", "requestId": "0bb53c17-408a-4ea8-a778-802c5e94d81a", "stackTrace": ["  File \"/var/task/invoice_processor.py\", line 70, in lambda_handler\n    error_message = f\"\u274c Error processing invoice from S3://{bucket_name}/{object_key} - {str(e)}\"\n"]}
