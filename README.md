@@ -104,7 +104,7 @@ The command should generate a success message, confirming that it is valid, as d
 terraform plan
 ```
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/6102e46ce1c79ad55ffc8c1f12e3ee419e0f9451/screenshots/Screenshot%202025-03-08%20144030.png)
 
 The list of changes that Terraform is anticipated to apply to the infrastructure resources should be displayed. The “+” sign indicates what will be added, while the “-” sign indicates what will be removed.
 
