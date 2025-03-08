@@ -160,7 +160,10 @@ git commit -m "Deploy infrastructure"
 
 git push origin main
 ```
-![image_alt]()
+
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/d2f7b4c48f118f1d216309ee717813487ca4ead0/screenshots/Screenshot%202025-03-08%20124135.png)
+
+
 
 ## Step 5:Testing the System
 
