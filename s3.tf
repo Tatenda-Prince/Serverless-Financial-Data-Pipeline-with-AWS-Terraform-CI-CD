@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "raw_invoice_bucket" {
 }
 
 resource "aws_s3_bucket" "processed_data_bucket" {
-  bucket = "tatenda-processed-invoice-bucket1" 
+  bucket = "tatenda-processed-invoice-bucket" 
 
   tags = {
     Name = "Processed Data Bucket"

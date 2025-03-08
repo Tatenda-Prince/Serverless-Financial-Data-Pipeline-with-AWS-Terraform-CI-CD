@@ -5,41 +5,45 @@ import os
 # Initialize DynamoDB client
 dynamodb = boto3.resource('dynamodb')
 
-# Environment variable for table name
+# Get the DynamoDB table name from environment variables
 DYNAMODB_TABLE = os.getenv('DYNAMODB_TABLE')
 
 def lambda_handler(event, context):
     try:
-        # Extract parameters from API Gateway query string
-        query_params = event.get("queryStringParameters", {})
+        # Extract query parameters from API Gateway request
+        query_params = event.get("queryStringParameters", {}) or {}
+
         invoice_id = query_params.get("InvoiceID")
-        timestamp = query_params.get("Timestamp")  # Ensure client sends Timestamp
 
-        if not invoice_id or not timestamp:
-            return {
-                "statusCode": 400,
-                "body": json.dumps({"error": "InvoiceID and Timestamp are required"})
-            }
-
-        # Fetch item from DynamoDB
+        # Get reference to the DynamoDB table
         table = dynamodb.Table(DYNAMODB_TABLE)
-        response = table.get_item(Key={"InvoiceID": invoice_id, "Timestamp": timestamp})
 
-        # Check if the item exists
-        if "Item" not in response:
+        if invoice_id:
+            # Query a single invoice by InvoiceID
+            response = table.scan(
+                FilterExpression="InvoiceID = :invoice_id",
+                ExpressionAttributeValues={":invoice_id": invoice_id}
+            )
+        else:
+            # Scan the entire table to get all invoices
+            response = table.scan()
+
+        # Check if any invoices exist
+        if "Items" not in response or not response["Items"]:
             return {
                 "statusCode": 404,
-                "body": json.dumps({"error": "Invoice not found"})
+                "body": json.dumps({"error": "No invoices found"})
             }
 
         return {
             "statusCode": 200,
-            "body": json.dumps(response["Item"])
+            "body": json.dumps(response["Items"])
         }
 
     except Exception as e:
-        print(f"Error querying invoice: {str(e)}")
+        print(f"Error querying invoices: {str(e)}")
         return {
             "statusCode": 500,
             "body": json.dumps({"error": str(e)})
         }
+
