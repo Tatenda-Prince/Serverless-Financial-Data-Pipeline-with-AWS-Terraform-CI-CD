@@ -135,7 +135,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.2.In the AWS Management Console, head to the AWS Lambda dashboard and verify that you two lambda function that were successfully created.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/5cc1e4dd6bdd305ea66e14d4a5edf46f5b0a6b66/screenshots/Screenshot%202025-03-08%20143027.png)
 
 3.3.In the AWS Management Console, head to the Amazon DynamoDB dashboard and verify that a table was successfully created as shown below
 
