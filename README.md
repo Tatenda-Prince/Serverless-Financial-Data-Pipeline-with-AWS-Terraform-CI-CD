@@ -131,7 +131,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.1.In the AWS Management Console, head to the Amazon S3 dashboard and verify that a S3 bucket was successfully created as shown below
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/5292c422c7908f7bf8dcc35c6b1f89a5749ccc0a/screenshots/Screenshot%202025-03-08%20142954.png)
 
 3.2.In the AWS Management Console, head to the AWS Lambda dashboard and verify that you two lambda function that were successfully created.
 
