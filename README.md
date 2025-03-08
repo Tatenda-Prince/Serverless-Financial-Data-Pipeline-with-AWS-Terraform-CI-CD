@@ -204,7 +204,7 @@ curl -X GET "https://your-api-gateway-url/prod/invoice"
 
 5.3.Expected Result: A JSON response containing invoice details.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/d68a430007be3532eaeb46b44a582a6aab459295/screenshots/Screenshot%202025-03-08%20130026.png)
 
 
 ## Test Error Handling
