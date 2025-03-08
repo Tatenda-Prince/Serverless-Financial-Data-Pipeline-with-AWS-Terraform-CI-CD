@@ -153,6 +153,8 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 ## Step 4: Push changes to GitHub to trigger CI/CD:
 
+4.1.Run the following commands.
+
 ```language
 git add .
 
@@ -162,6 +164,16 @@ git push origin main
 ```
 
 ![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/d2f7b4c48f118f1d216309ee717813487ca4ead0/screenshots/Screenshot%202025-03-08%20124135.png)
+
+
+4.2.Monitor GitHub Actions to ensure successful deployment.
+
+![image_alt]()
+
+
+
+![image_alt]()
+
 
 
 
@@ -175,7 +187,7 @@ git push origin main
 aws s3 cp sample_invoice.json s3://your-s3-bucket-name/
 ```
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/51735e0f74a9a6b24801d67df85270b586762561/screenshots/Screenshot%202025-03-08%20125033.png)
 
 5.2.Expected Result: The invoice should be processed by Lambda and stored in DynamoDB.
 
