@@ -139,7 +139,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.3.In the AWS Management Console, head to the Amazon DynamoDB dashboard and verify that a table was successfully created as shown below
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/7282ddeb9bd04eba21e824baf82395c25985aacc/screenshots/Screenshot%202025-03-08%20143013.png)
 
 
 3.4.In the AWS Management Console, head to the Amazon API Gateway dashboard and verify that a API Invoice was successfully created as shown below
