@@ -217,7 +217,7 @@ aws s3 cp invalid_invoice.json s3://your-s3-bucket-name/
 
 5.5.Expected Result: SNS notification is triggered, and an alert is sent.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/0c2a313e616076fbba04da10fceb62a3c0e0481e/screenshots/Screenshot%202025-03-08%20131449.png)
 
 
 ## Future Enhancements
