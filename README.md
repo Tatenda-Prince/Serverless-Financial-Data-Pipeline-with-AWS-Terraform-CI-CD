@@ -168,7 +168,7 @@ git push origin main
 
 4.2.Monitor GitHub Actions to ensure successful deployment.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/f10188b0da9aa2a875c6d3c609900a0306717dd6/screenshots/Screenshot%202025-03-08%20124344.png)
 
 
 
