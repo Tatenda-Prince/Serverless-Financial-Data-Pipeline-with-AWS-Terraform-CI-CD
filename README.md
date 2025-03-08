@@ -124,7 +124,7 @@ Terraform will initiate the process of applying all the changes to the infrastru
 
 The process should now conclude with a message indicating “Apply complete”, stating the total number of added, modified, and destroyed resources, accompanied by several resources.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/5d94b253a62187d3121fc06c1e96e561f8f996c1/screenshots/Screenshot%202025-03-08%20144954.png)
 
 
 ## Step 3: Verify creation of our resources
