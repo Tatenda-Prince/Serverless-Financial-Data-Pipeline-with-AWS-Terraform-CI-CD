@@ -117,7 +117,7 @@ terraform apply
 
 Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/567280accdad33e480d5743e8b57df111b7a9421/screenshots/Screenshot%202025-03-08%20144231.png)
 
 
 ## Success
