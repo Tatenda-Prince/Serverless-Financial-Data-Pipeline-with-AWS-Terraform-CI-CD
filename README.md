@@ -96,7 +96,7 @@ terraform validate
 
 The command should generate a success message, confirming that it is valid, as demonstrated below.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/c9c631d54f2e1e58923b1c46f773f43622aa189b/screenshots/Screenshot%202025-03-08%20143843.png)
 
 2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply.
 
