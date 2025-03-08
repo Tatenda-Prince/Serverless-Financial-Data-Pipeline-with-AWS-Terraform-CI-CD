@@ -2,7 +2,7 @@
 
 ## Technical Architecture
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/c64c45edd901dd14d4a3841dbceacab7df0c1407/screenshots/Screenshot%202025-03-07%20213637.png)
 
 
 ## Project Overview
