@@ -192,7 +192,7 @@ aws s3 cp sample_invoice.json s3://your-s3-bucket-name/
 
 5.2.Expected Result: The invoice should be processed by Lambda and stored in DynamoDB.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/9a92ce9d4d590ac9687cd5b07de2b09b6af02c02/screenshots/Screenshot%202025-03-08%20125836.png)
 
 
 
