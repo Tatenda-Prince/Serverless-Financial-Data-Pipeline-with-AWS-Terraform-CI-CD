@@ -84,7 +84,7 @@ terraform init
 
 Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/da89a04b3ab9e621345b51957a3c16a271757eee/screenshots/Screenshot%202025-03-08%20143748.png)
 
 
 2.3.Next, let’s ensure that our code does not contain any syntax errors by running the following command
