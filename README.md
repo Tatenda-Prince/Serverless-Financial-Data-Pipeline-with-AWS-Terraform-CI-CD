@@ -148,7 +148,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.4.In the AWS Management Console, head to the Amazon SNS dashboard and verify that a InvoiceProcessingAlerts topic was successfully created as shown below
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/d521f52ace88cf8d954d10564974ca29df161b6e/screenshots/Screenshot%202025-03-08%20143037.png)
 
 
 ## Step 4: Push changes to GitHub to trigger CI/CD:
