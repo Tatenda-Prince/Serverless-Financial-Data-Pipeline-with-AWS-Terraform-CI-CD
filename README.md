@@ -172,7 +172,7 @@ git push origin main
 
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/ec275a324fbf7fe48c7f1c1dba563146e471a76f/screenshots/Screenshot%202025-03-08%20124538.png)
 
 
 
@@ -189,9 +189,11 @@ aws s3 cp sample_invoice.json s3://your-s3-bucket-name/
 
 ![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/51735e0f74a9a6b24801d67df85270b586762561/screenshots/Screenshot%202025-03-08%20125033.png)
 
+
 5.2.Expected Result: The invoice should be processed by Lambda and stored in DynamoDB.
 
 ![image_alt]()
+
 
 
 ##  Query Invoice via API Gateway
