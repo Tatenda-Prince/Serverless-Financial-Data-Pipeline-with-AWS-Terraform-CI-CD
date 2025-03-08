@@ -66,7 +66,9 @@ You works at the Up The Chelsea Reatail that receives thousands of invoices dail
 
 1.1.Clone this repository to your local machine.
 
-`git clone https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD.git`
+```language 
+git clone https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD.git
+```
 
 
 ## Step 2 : Run Terraform workflow to initialize, validate, plan then apply
@@ -75,7 +77,9 @@ You works at the Up The Chelsea Reatail that receives thousands of invoices dail
 
 2.2.In your local terraform visual code environment terminal, to initialize the necessary providers, execute the following command in your environment terminal.
 
-`terraform init`
+```language
+terraform init
+```
 
 
 Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
@@ -86,7 +90,9 @@ Upon completion of the initialization process, a successful prompt will be displ
 2.3.Next, let’s ensure that our code does not contain any syntax errors by running the following command
 
 
-`terraform validate`
+```language
+terraform validate
+```
 
 The command should generate a success message, confirming that it is valid, as demonstrated below.
 
@@ -94,7 +100,9 @@ The command should generate a success message, confirming that it is valid, as d
 
 2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply.
 
-`terraform plan`
+```language
+terraform plan
+```
 
 ![image_alt]()
 
@@ -103,7 +111,9 @@ The list of changes that Terraform is anticipated to apply to the infrastructure
 
 2.5.Now, let’s deploy this infrastructure! Execute the following command to apply the changes and deploy the resources. Note — Make sure to type “yes” to agree to the changes after running this command.
 
-`terraform apply`
+```language
+terraform apply
+```
 
 Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
 
