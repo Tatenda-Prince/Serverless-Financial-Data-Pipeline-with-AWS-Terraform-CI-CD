@@ -144,7 +144,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.4.In the AWS Management Console, head to the Amazon API Gateway dashboard and verify that a API Invoice was successfully created as shown below
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/6218990b5719835d7778b2cf9f268f2ae6b5afb3/screenshots/Screenshot%202025-03-08%20145111.png)
 
 3.4.In the AWS Management Console, head to the Amazon SNS dashboard and verify that a InvoiceProcessingAlerts topic was successfully created as shown below
 
