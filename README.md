@@ -163,8 +163,63 @@ The process should now conclude with a message indicating “Apply complete”, 
 GitHub Actions Workflow:
 
 ```language
+name: Terraform CI/CD
 
+on:
+  push:
+    branches:
+      - master  # Ensure this matches your repo's default branch
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:  # Allows manual trigger
+    inputs:
+      destroy:
+        description: "Destroy AWS resources (true/false)"
+        required: false
+        default: "false"
 
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.7
+
+      - name: Cache Terraform Providers
+        uses: actions/cache@v3
+        with:
+          path: .terraform
+          key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
+          restore-keys: |
+            ${{ runner.os }}-terraform-
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Initialize Terraform
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/master' && github.event.inputs.destroy != 'true'
+        run: terraform apply -auto-approve
+
+      - name: Terraform Destroy
+        if: github.event.inputs.destroy == 'true'
+        run: terraform destroy -auto-approve
 ```
 
 
