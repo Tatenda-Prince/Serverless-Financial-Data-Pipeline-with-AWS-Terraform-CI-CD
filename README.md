@@ -235,7 +235,7 @@ The env section within the steps that require AWS credentials pulls the values f
 
 4.Add the following secrets:
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/cc5455d29c80d9cd3d2962477678b0bf11ea8f84/screenshots/Screenshot%202025-03-13%20192625.png)
 
 
 4.3.Run the following commands.
