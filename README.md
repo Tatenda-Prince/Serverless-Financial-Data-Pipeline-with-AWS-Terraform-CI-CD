@@ -231,7 +231,7 @@ The env section within the steps that require AWS credentials pulls the values f
 
 2.Navigate to Your Repository on GitHub
 
-3.Add Secrets Settings > Secrets and variables > Actions.
+3.Add Secrets `Settings > Secrets and variables > Actions`.
 
 4.Add the following secrets:
 
