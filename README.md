@@ -152,8 +152,38 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 
 ## Step 4: Push changes to GitHub to trigger CI/CD:
+4.1.This GitHub Actions workflow automates the deployment of AWS infrastructure using Terraform:
 
-4.1.Run the following commands.
+1.On push to the `master` branch – Ensures updates are applied automatically.
+
+2.On pull requests to `master` – Allows reviewing changes before merging.
+
+3.On manual trigger (workflow_dispatch) – Allows optional destruction of AWS resources.
+
+GitHub Actions Workflow:
+
+```language
+
+
+```
+
+
+4.2.Manage Secrets in GitHub:
+
+1.Environment Variables:
+
+The env section within the steps that require AWS credentials pulls the values from the secrets stored in the GitHub repository.
+
+2.Navigate to Your Repository on GitHub
+
+3.Add Secrets Settings > Secrets and variables > Actions.
+
+4.Add the following secrets:
+
+![image_alt]()
+
+
+4.3.Run the following commands.
 
 ```language
 git add .
@@ -166,7 +196,7 @@ git push origin main
 ![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/d2f7b4c48f118f1d216309ee717813487ca4ead0/screenshots/Screenshot%202025-03-08%20124135.png)
 
 
-4.2.Monitor GitHub Actions to ensure successful deployment.
+4.4.Monitor GitHub Actions to ensure successful deployment.
 
 ![image_alt](https://github.com/Tatenda-Prince/Serverless-Financial-Data-Pipeline-with-AWS-Terraform-CI-CD/blob/f10188b0da9aa2a875c6d3c609900a0306717dd6/screenshots/Screenshot%202025-03-08%20124344.png)
 
